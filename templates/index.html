@@ -372,6 +372,33 @@ Labels Hataye: Bot: aur You: labels ko khatam kar diya gaya hai taake interface 
     /* Halka peela color highlights ke liye */
     padding: 0 2px;
 }
+/* Tables ko professional banane ke liye */
+.bot-msg table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin: 10px 0; 
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Thora sa shadow mazeed premium look ke liye */
+}
+
+.bot-msg th, .bot-msg td { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: left; 
+    font-size: 13px; /* Parhne mein asaan */
+}
+
+.bot-msg th { 
+    background-color: #007bff; 
+    color: white; 
+    font-weight: bold;
+}
+
+.bot-msg tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lines ko alag dikhane ke liye */
+}
 
         .input-area { display: flex; padding: 10px; border-top: 1px solid #eee; background: white; }
         input { 
