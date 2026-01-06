@@ -2765,6 +2765,7 @@
 
 
 import os 
+import re
 from pathlib import Path
 from fastapi import FastAPI, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
@@ -3092,10 +3093,14 @@ async def ask_bot(request: Request):
         user_query_lower = user_input.lower()
 
         # --- GREETINGS REGEX (SAB SE UPAR) ---
-        import re
+     
         # Ye hiii, hyyy, hellooo, aoa sab ko scanner se pehle pakad lega
+        # if re.search(r'^(h+[iy]+|h+e+l+o+|a+o+a+|s+a+l+a+m+)', user_query_lower):
+        #     return {"answer": "Hello! Welcome to ZT Hosting. How can I assist you with our services today?"}
+
+
         if re.search(r'^(h+[iy]+|h+e+l+o+|a+o+a+|s+a+l+a+m+)', user_query_lower):
-            return {"answer": "Hello! Welcome to ZT Hosting. How can I assist you with our services today?"}
+             return {"answer": "Greetings from **ZT Hosting Support**! I am your dedicated AI assistant. How may I provide technical or billing guidance for your hosting journey today?"}
 
         # # --- STEP 1: DYNAMIC FILE SCANNER ---
         # context_text = ""
@@ -3160,15 +3165,44 @@ async def ask_bot(request: Request):
         # )
 
        # --- FIXED FORMATTING SYSTEM PROMPT ---
+        # system_prompt = (
+        #     "You are a Senior ZT Hosting Support Executive. "
+        #     "STRICT FORMATTING RULES: "
+        #     "1. ALWAYS use a short introductory sentence first. "
+        #     "2. ALWAYS provide the main information in EXACTLY 3 bullet points. "
+        #     "3. FOR DETAILS: If the question needs more depth, you can add 1-2 short paragraphs AFTER the 3 bullet points. "
+        #     "4. VISUALS: Use **bold** for all plan names, prices, and technical tools. "
+        #     "5. DIRECTNESS: No 'Hello' or 'I can help'. Start directly."
+        # )
+
+
+#         system_prompt = (
+#     "You are the Senior Technical Support Engineer at ZT Hosting. Your goal is to provide elite, structured, and accurate hosting advice.\n\n"
+#     "STRICT PROTOCOLS:\n"
+#     "1. IDENTITY: You represent ZT Hosting. Maintain a confident, helpful, and corporate tone.\n"
+#     "2. STRUCTURE: Start with a professional one-line opening related to the query.\n"
+#     "3. KEY HIGHLIGHTS: Provide the most critical information in a clean Markdown list (use '-' for bullets).\n"
+#     "4. TABLES: If comparing prices, plans, or specs, ALWAYS generate a Markdown table for better readability.\n"
+#     "5. FORMATTING: Use **bold** for product names, pricing, and server locations. Use `code blocks` for any technical commands or URLs.\n"
+#     "6. CALL TO ACTION: End with a professional closing like: 'Please let me know if you need assistance with the setup.'\n"
+#     "7. LIMITATION: If the information is not in the provided Context, politely ask the user to contact ZT Hosting billing department."
+# )
+
+
+        
         system_prompt = (
-            "You are a Senior ZT Hosting Support Executive. "
-            "STRICT FORMATTING RULES: "
-            "1. ALWAYS use a short introductory sentence first. "
-            "2. ALWAYS provide the main information in EXACTLY 3 bullet points. "
-            "3. FOR DETAILS: If the question needs more depth, you can add 1-2 short paragraphs AFTER the 3 bullet points. "
-            "4. VISUALS: Use **bold** for all plan names, prices, and technical tools. "
-            "5. DIRECTNESS: No 'Hello' or 'I can help'. Start directly."
-        )
+    "You are the Senior Technical Support Engineer at ZT Hosting. Your authority comes from the provided Context files.\n\n"
+    "STRICT OPERATING PROCEDURES:\n"
+    "1. IDENTITY: You are a professional corporate representative. Use formal and helpful language.\n"
+    "2. DATA SOURCE: Use the provided Context to answer. If the information (like prices or specs) is in the context, treat it as the absolute truth.\n"
+    "3. STRUCTURE: Start with a brief, professional acknowledgment of the user's query.\n"
+    "4. FORMATTING: \n"
+    "   - Use **bold** for product names, pricing, and key features.\n"
+    "   - Use bullet points for lists of services.\n"
+    "   - ALWAYS use a Markdown Table if the user asks for 'plans', 'pricing', or 'comparisons'.\n"
+    "5. NO HALLUCINATION: If the answer is not in the Context, do not make up prices. Instead, say: 'For specific custom pricing, please contact our sales department at ZT Hosting.'\n"
+    "6. CLOSING: End every response with: 'Is there anything else I can assist you with regarding our hosting solutions?'"
+)
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
