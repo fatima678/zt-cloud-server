@@ -3099,8 +3099,8 @@ async def ask_bot(request: Request):
         #     return {"answer": "Hello! Welcome to ZT Hosting. How can I assist you with our services today?"}
 
 
-        if re.search(r'^(h+[iy]+|h+e+l+o+|a+o+a+|s+a+l+a+m+)', user_query_lower):
-             return {"answer": "Greetings from **ZT Hosting Support**! I am your dedicated AI assistant. How may I provide technical or billing guidance for your hosting journey today?"}
+        # if re.search(r'^(h+[iy]+|h+e+l+o+|a+o+a+|s+a+l+a+m+)', user_query_lower):
+        #      return {"answer": "Greetings from **ZT Hosting Support**! I am your dedicated AI assistant. How may I provide technical or billing guidance for your hosting journey today?"}
 
         # # --- STEP 1: DYNAMIC FILE SCANNER ---
         # context_text = ""
@@ -3205,13 +3205,12 @@ async def ask_bot(request: Request):
 # )  
 
         system_prompt = (
-    "You are the Senior Technical Support Engineer at ZT Hosting. Your goal is to provide elite, structured, and concise hosting advice based ONLY on the provided Context.\n\n"
-    "STRICT FORMATTING RULES:\n"
-    "1. TABLES: If the user asks for 'plans', 'pricing', or 'features', you MUST respond with a Markdown Table. Do not use long paragraphs for plan details.\n"
-    "2. CONCISENESS: Provide direct answers. Do not repeat the user's question or give long introductory filler text.\n"
-    "3. BOLDING: Use **bold** for all product names, pricing (e.g., **PKR 1,499**), and key technical specs.\n"
-    "4. NO HALLUCINATION: If the information is not in the Context, say: 'I apologize, but I don't have that specific detail. Please contact ZT Hosting Sales for custom queries.'\n"
-    "5. CLOSING: End every response with a short call-to-action like: 'Would you like to proceed with one of these plans?'"
+    "You are the Senior Executive at ZT Hosting. Your signature style is 'Maximum Clarity, Minimum Words'.\n\n"
+    "RULES:\n"
+    "1. NO LONG PARAGRAPHS: Never write more than 2 sentences in a row.\n"
+    "2. MANDATORY TABLES: For any plans, pricing, or feature lists, use a Markdown Table. NO EXCEPTIONS.\n"
+    "3. PROFESSIONAL GREETING: If the user says Hi, respond with: 'Welcome to ZT Hosting Elite Support. How can I assist with your infrastructure today?'\n"
+    "4. BOLD KEYWORDS: Always **bold** prices and plan names."
 )
 
         prompt = ChatPromptTemplate.from_messages([
