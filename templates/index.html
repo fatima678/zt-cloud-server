@@ -430,9 +430,16 @@ Labels Hataye: Bot: aur You: labels ko khatam kar diya gaya hai taake interface 
             loading.style.display = 'block';
             box.scrollTop = box.scrollHeight;
 
+            // const apiEndpoint = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
+            //     ? 'http://127.0.0.1:8000/ask' 
+            //     : '/ask';
+
+
+
             const apiEndpoint = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
-                ? 'http://127.0.0.1:8000/ask' 
-                : '/ask';
+    ? 'http://127.0.0.1:8000/ask' 
+    : 'https://zt-cloud-server.onrender.com/ask'; // '/ask' add kar diya hai
+
 
             fetch(apiEndpoint, {
                 method: 'POST',
