@@ -1,0 +1,59 @@
+Source: https://zthosting.com/acceptable-use-policy/
+Hash: b87cb66db8260a1ebcdaa6a3ef5e3d05
+==============================
+Acceptable Usage Policy
+Acceptable Use Policy, ZtHosting
+Zero Tolerance Hosting
+This Acceptable Use Policy (“AUP”) governs your use of the Services and is incorporated by reference into our
+Terms of Service
+. Unless otherwise stated, defined terms in this AUP have the meanings provided to them in the Terms of Service. We may modify this AUP at any time without notice.
+You shall use the Services only for lawful purposes. Transmission, storage, or display of any information, data, or material in violation of applicable laws or regulations, especially of the laws of Pakistan, is prohibited. We reserve the right to terminate the Services for any Customer that exposes the Company to legal liability or threatens its ability to provide services to other customers. You agree to indemnify and hold the Company harmless from any claims resulting from your use of the Services.
+1. Prohibited Uses
+No Illegal or Harmful Use
+– You may not use the Services to publish content or engage in activity that is harmful to others or illegal under the applicable law, including without limitation in connection with any of the following illegal, harmful or fraudulent activities:
+– Disclosing private sensitive personal information about others;
+– Distributing malware or other malicious code;
+– Engaging in the unlawful distribution of controlled substances and drug contraband;
+– Engaging in the unlawful distribution of prescription medications, including, but not limited to, promotion, marketing, or sale of prescription medications without a valid prescription;
+– Gambling;
+– Hosting pornography or content that is potentially pornographic (Any website found to be hosting pornography or linking to pornography will be suspended immediately without notice and reported to law enforcement;
+– Hosting FOREX, E-Gold Exchange, Second Life/Linden Exchange, Ponzi, MLM/Pyramid Scheme, High-Yield Interest Programs (HYIP) or related sites;
+– Hosting or linking to a website intended to deceive the public including, but not limited to sites listed at
+aa419.org
+& escrow-fraud.com;
+– Hosting or linking to an anonymous proxy server;
+– Infringing upon the Intellectual Property Rights of Others. This includes, but is not limited to, the unauthorized copying or distribution of movies, music, books, photographs, software/warez, or any other copyrighted work;
+– Money laundering;
+– Any material that is against Islamic beliefs
+– Any politically inciteful material as determined by the Pakistan Penal Code
+– Any material that causes racism, sexism or divisions in society
+– Phishing or engaging in identity theft; and
+– Selling weapons or ammunition.
+No Unauthorized System Access or Network Abuse
+-Accessing another network without permission, to probe or scan for vulnerabilities or breach security or authentication measures;
+– Attacking other networks (i.e. Denial of Service (DoS) attacks);
+– Intercepting or monitoring data without permission;
+– Running a file-sharing site;
+– Running any software that interfaces with an IRC (Internet Relay Chat) network;
+– Using any deep-link, page-scrape, robot, crawl, index, spider, offline reader, click spam, macro programs, internet agent, or other automatic device, program, algorithm or methodology which does the same things, to use, access, copy, index, acquire information, generate impressions or clicks, input information, store information, search, generate searches, or monitor any portion of our website or servers for any unauthorized purpose;
+2. Zero Tolerance Hosting Spam Policy
+You may not use the Services to send spam or bulk unsolicited messages. We maintain a zero-tolerance policy for use of its network or services in any manner associated with the transmission, distribution or delivery of any bulk e-mail, including unsolicited bulk or unsolicited commercial e-mail, or the sending, assisting, or commissioning the transmission of commercial e-mails.“Safe lists,” purchased lists, and selling of lists will be treated as SPAM. We may terminate the account of any User who sends out SPAM with or without notice. Websites advertised via SPAM (i.e. Spamvertised) may not be hosted on our servers. This provision includes, but is not limited to, SPAM sent via fax, phone, postal mail, email, instant messaging, or usenet/newsgroups. Any User account which results in our IP space being blacklisted will be immediately suspended and/or terminated.
+3. Defamation and Objectionable Content
+We value the freedom of expression and encourage Users to be respectful of the content they post.  As a web host, we are not a publisher of User content and generally not in a position to investigate the veracity of individual defamation claims or to determine whether certain material, which we may find objectionable, should be censored.
+Accordingly, we generally require a court order from a court of competent jurisdiction.  However, we reserve the right to disable or remove any content to prevent harm to others or to the Company, as determined in our sole discretion.
+4.Enforcement4
+Resellers
+If there is a violation of this AUP by a User of a Reseller, we will suspend the account in question and notify the Reseller so that the Reseller can address the matter with the User. The occurrence of additional violations on a User account may result in the immediate suspensions or termination of your Reseller account.
+Direct customers.
+Your Services may be terminated with or without notice upon any violation of this AUP. If applicable, violations will be reported to the appropriate law enforcement agency. We reserve the right to enforce, or not enforce, this AUP in our sole discretion.
+5.Reporting Violation of this AUP
+If you feel you have discovered a violation of our AUP please contact us at
+abuse@ZtHosting.com
+Page Content
+Toggle
+Acceptable Usage Policy
+Acceptable Use Policy, ZtHosting
+Zero Tolerance Hosting
+1. Prohibited Uses
+No Illegal or Harmful Use
+No Unauthorized System Access or Network Abuse

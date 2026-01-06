@@ -1,0 +1,94 @@
+Source: https://zthosting.com/privacy-policy/
+Hash: d093fa1487213333c3fb24fd4ea09e55
+==============================
+Privacy Policy
+Privacy Policy, Zthosting
+Zero Tolerance Hosting
+Protecting your privacy is critical to ZtHosting. We will not sell, lease or exchange your personal data to third parties without first obtaining your express consent.
+This Privacy Policy describes how ZtHosting collects information from all end users (website visitors, members, and hosting service users), and what we do with the information we collect, and the choices Visitors have concerning the collection and use of such information. Please read this privacy policy before using the site or submitting any personal information. By using the site, you are accepting the practices described in this privacy policy.
+Personal Information ZtHosting Collects and How It Is Used:
+Why We Collect Information
+ZtHosting collects information in different ways from Visitors who access the various parts of our Website, or use our Services, and subscribers (members). We use this information to provide a customized experience as you use our Services. We also collect technical information such as IP addresses and the date and time of visits. We use IP addresses to help diagnose problems with our servers and to administer our Web site. We also use it to identify and protect us against malicious hackers or abusers.
+What We do With This Information
+ZtHosting will not sell or give any personal information regarding its visitors or service users to any third party. Any information that you give to us is held with the utmost care and security. Generally, we do not share this information with third parties. However, we may disclose personal information collected if we have received your permission beforehand or in very special circumstances, such as when we believe that such disclosure is required by law or other special cases described below.
+Responses to Email Inquiries
+When Visitors send email inquiries to ZtHosting, the return email address is used to answer the email inquiry we receive. ZtHosting does not use the return email address for any other purpose and does not share the return email address with any third party.
+Special Case
+It is ZtHosting policy not to use or share the personal information about Visitors. However, ZtHosting may disclose personal information about Visitors, or information regarding your use of the Services or Web site accessible through our Services, for any reason if, in our sole discretion, we believe that it is reasonable to do so, including: to satisfy laws, such as the Electronic Communications Privacy Act, regulations, or governmental or legal requests for such information; to disclose information that is necessary to identify, contact, or bring legal action against someone, or to protect ZtHosting.
+“Cookies” and How ZtHosting Uses Them
+A “cookie” is a small data file that can be placed on your hard drive when you visit certain Web sites. ZtHosting may use cookies to store and collect information, which is needed for ZtHosting to work properly. We also may use cookies to track information for statistical purposes to improve the services we provide. These cookies do not enable third parties to access any of your customer information. Advertisers and partners (like Google) may also use their own cookies. We do not control use of these cookies and expressly disclaim responsibility for information collected through them.
+ZtHosting Commitment to Data Security
+Services and Web sites we sponsor or host have security measures in place to protect the loss, misuse, and alteration of the information under our control. While we make every effort to ensure the integrity and security of our network and systems, we cannot guarantee that our security measures will prevent third-party “hackers” from illegally obtaining this information.
+Revisions to This Policy
+ZtHosting reserves the right to revise, amend, or modify this policy, and our other policies and agreements at any time and in any manner.
+Terms of Service. Please also see our Terms Of Service, which describes the use, disclaimers, indemnification and limitation of liability governing the use of the entire ZtHosting website.
+Data Request Policy
+i. Privacy Policy
+Please see our Privacy Policy for further information on what type of information we collect, how it is used and when it may be disclosed. Subject to our Privacy Policy, this Data Request Policy describes the types of requests for data that we may receive and how we may respond to such requests.
+ii.Types of Requests
+We receive the following types of requests concerning customer data:
+a.Data Requests
+. A data request is a request for information or documents relating to customer accounts in connection with official criminal investigations or other official legal proceedings. Except in limited emergency situations (see below), we require data requests to be made through formal Pakistani legal process and procedures, and we respond to such requests as required by law. Examples of data requests include:
+– Court Orders
+– Search Warrants
+– Legal process received from outside Pakistan may require a Mutual Legal Assistance Treaty  with Pakistan
+– FIA requests
+– Other forms of legal process
+b. Preservation Requests
+. A preservation request asks ZtHosting to preserve customer account records in connection with official criminal investigations or other official legal proceedings. Preservation requests must include the following information:
+– Identification of the account(s) at issue (as further described in Section 4 below);
+– Identification of the investigating agency and/or specific pending official proceedings (requests must be signed on law enforcement letterhead );
+– Assurances that the requesting agency or individual is taking steps to obtain appropriate legal process for access to the data that we are being asked to retain; and
+– A valid return email address and phone number.
+c.Emergency Requests
+. An emergency request is only appropriate in cases involving imminent serious bodily harm, death, or terrorism. We respond to emergency requests when we believe in good faith that such harm may occur if we do not respond without delay.
+Information to Include in a Request
+The following information must be included in a request for customer data:- First and last name of the customer and email address associated with the account; and
+– Domain name and/or IP address associated with the account.We may not be able to respond to a request without this information.Additionally, we reserve the right to request a copy of the complaint and any supporting documentation that demonstrates how the information requested is related to the pending litigation and the underlying subpoena.
+Fees:
+We may seek reimbursement for costs in responding to requests as provided by law and may charge additional fees for costs in responding to unusual or burdensome requests.
+Submitting a Request
+All requests should be mailed or emailed to the following:
+Off # 6, 2nd Floor, Majahid Plaza, Blue Area, Islamabad Pakistan
+Email:
+abuse@ZtHosting.com
+Phone: 03-111-04-5555
+IMPORTANT NOTE: IN THE EVENT YOU SEND US A NOTICE OF ANY KIND VIA EMAIL AND DO NOT RECEIVE A RESPONSE FROM US, PLEASE SUBMIT A DUPLICATE COPY VIA PAPER.
+Available Information
+Depending on the type of formal legal process provided, we may be able to respond with one or more of the following types of data:
+Non-Content.
+We will produce non-content information such as basic subscriber information which may include the following subject to a valid request:- Name
+– Email addresses
+– Date and time of account creation
+– Billing information
+– IP Logs
+– Credit Card Details
+Content.
+We will only produce customer content (such as website files and email content) pursuant to a valid search warrant from an entity with proper jurisdiction.
+If you have any questions regarding our privacy policy, please visit the
+Contact Us
+page.
+Social Platforms:
+Facebook.com/zthosting
+.
+Instagram.com/zthosting
+,
+Linkedin.com/zerotolerancehosting
+,
+Twitter.com/Zthosting
+Page Content
+Toggle
+Privacy Policy
+Privacy Policy, Zthosting
+Zero Tolerance Hosting
+Personal Information ZtHosting Collects and How It Is Used:
+Why We Collect Information
+What We do With This Information
+Responses to Email Inquiries
+Special Case
+“Cookies” and How ZtHosting Uses Them
+ZtHosting Commitment to Data Security
+Revisions to This Policy
+Information to Include in a Request
+Submitting a Request
+Available Information

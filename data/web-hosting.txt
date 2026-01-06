@@ -1,0 +1,468 @@
+Source: https://zthosting.com/web-hosting/
+Hash: 5d1f0939d34943a54ea2343dbb0d0c33
+==============================
+Shared Hosting in Pakistan - Best Web Hosting
+ZtHosting is the best web hosting company providing cPanel Shared web hosting in Pakistan with Unlimited SSD storage, Unlimited bandwidth, 1-Click Instant WordPress Install, Dedicated CPU & RAM, Free DNS management, Cloudflare CDN Caching, Cpanel Powered, Free SSL, and Free Migration. Moreover, we provide daily backups for free.
+cPanel Shared Starter
+Save 50%
+WAS PKR
+1,157
+/mo
+580 PKR
+/mo
+Free .com Domain
+Annually, Biannually & Triannually Plans.
+-----------------------------------
+10 Websites
+-----------------------------------
+5GB NVMe Storage
+-----------------------------------
+Unlimited Bandwidth
+-----------------------------------
+Super Power
+Processing Power: 1CPU
+RAM: 2GB
+Inodes: 250,000
+IO: 10MB/s
+IOPS: 10000
+Entry Processes: 100
+NPROC: 150
+-----------------------------------
+Control Panel: cPanel
+-----------------------------------
+MySQL Databases: 10
+-----------------------------------
+Email Accounts: 100
+-----------------------------------
+Daily & Weekly Backup: Yes
+-----------------------------------
+CloudLinux & CageFS
+-----------------------------------
+Free SSL for All Sites
+-----------------------------------
+Apps Installer: Softaculous
+-----------------------------------
+Parked Domains: 10
+-----------------------------------
+Addon Domains: 10
+-----------------------------------
+Emails Limit Per Hour: 50
+-----------------------------------
+Free Migration
+ORDER NOW
+cPanel Shared Pro
+Save 50%
+WAS PKR
+2,027
+/mo
+1,015 PKR
+/mo
+Free .com Domain
+Annually, Biannually & Triannually Plans.
+-----------------------------------
+15 Websites
+-----------------------------------
+10GB NVMe Storage
+-----------------------------------
+Unlimited Bandwidth
+-----------------------------------
+Extreme Power
+Processing Power: 2CPU
+RAM: 4GB
+Inodes: 300,000
+IO: 15MB/s
+IOPS: 10000
+Entry Processes: 200
+NPROC: 300
+-----------------------------------
+Control Panel: cPanel
+-----------------------------------
+MySQL Databases: 20
+-----------------------------------
+Email Accounts: 200
+-----------------------------------
+Daily & Weekly Backup: Yes
+-----------------------------------
+CloudLinux & CageFS
+-----------------------------------
+Free SSL for All Sites
+-----------------------------------
+Apps Installer: Softaculous
+-----------------------------------
+Parked Domains: 15
+-----------------------------------
+Addon Domains: 15
+-----------------------------------
+Emails Limit Per Hour: 100
+-----------------------------------
+Free Migration
+ORDER NOW
+cPanel Shared Max
+Save 50%
+WAS PKR
+7,247
+/mo
+3,625 PKR
+/mo
+Free .com Domain
+Annually, Biannually & Triannually Plans.
+-----------------------------------
+Unlimited Websites
+-----------------------------------
+Unlimited NVMe Storage
+-----------------------------------
+Unlimited Bandwidth
+-----------------------------------
+Ultimate Power
+Processing Power: 4CPU
+RAM: 6GB
+Inodes: 400,000
+IO: 20MB/s
+IOPS: 10000
+Entry Processes: 200
+NPROC: 300
+-----------------------------------
+Control Panel: cPanel
+-----------------------------------
+MySQL Databases: Unlimited
+-----------------------------------
+Email Accounts: Unlimited
+-----------------------------------
+Daily & Weekly Backup: Yes
+-----------------------------------
+CloudLinux & CageFS
+-----------------------------------
+Free SSL for All Sites
+-----------------------------------
+Apps Installer: Softaculous
+-----------------------------------
+Parked Domains: Unlimited
+-----------------------------------
+Addon Domains: Unlimited
+-----------------------------------
+Emails Limit Per Hour: 150
+-----------------------------------
+Free Migration
+ORDER NOW
+cPanel Shared Web Hosting in Pakistan - cPanel Best Web hosting
+We are the best web hosting for small businesses in Pakistan. We have designed our cPanel Shared Web Hosting package at a meager price, but it does not lack quality. The Shared Hosting package comes with a 30-day money-back guarantee. Buy your desired Web hosting packages here, or go for a
+business hosting package
+.
+Social Platforms:
+Facebook.com/zthosting
+.
+Instagram.com/zthosting
+,
+Linkedin.com/zerotolerancehosting
+,
+Twitter.com/Zthosting
+Select Your Plan
+Plan 1
+$14.99/yearly
+Plan 2
+$23.99/yearly
+Plan 3
+$47.99/yearly
+Hosting Features
+Hosted Websites
+1
+10
+Unlimited
+SSD Storage
+?
+Unlimited
+GB
+Unlimited
+GB
+Unlimited
+GB
+Traffic
+?
+Fair Usage
+Fair Usage
+Fair Usage
+Bandwidth
+?
+Unlimited
+Unlimited
+Unlimited
+Guaranteed Resources
+?
+CPU Cores Available
+1 CPU
+1 CPU
+1 CPU
+RAM Availability
+1 GB
+1 GB
+1 GB
+Resource Quotas
+Power
+Power
+Power
+Immediate Account Setup
+Free Website Transfer
+?
+Multiple Server Locations
+?
+30 Days Money Back
+Domain Features
+Free DNS management
+?
+Domain redirects
+Addon Domains
+?
+0
+10
+Unlimited
+Parked Domains
+?
+0
+10
+Unlimited
+Sub-domains
+?
+Unlimited
+Unlimited
+Unlimited
+Buy Now
+Buy Now
+Buy Now
+Five Layers of Caching & Speed Optimizations
+Varnish
+?
+Apache Mod_Lsapi
+?
+Memcached
+?
+APC
+?
+OPcache
+?
+Cloudflare CDN Caching
+?
+Mod_Expires
+?
+JavaScript bundling
+?
+Browser optimization
+?
+Cache header optimization
+?
+Aggressive GZIP
+?
+Lossless data compression
+?
+Asynchronous resource loading
+?
+AutoMinify
+?
+Security
+Network Firewall
+Web Application Firewall
+?
+Brute-force Protection
+Exploits and Malware Protect
+Malware Scan and Reports
+Hotlink and Password Protection
+Two-Factor Authentication
+CpGuard Server Security
+?
+Account Isolation
+?
+CageFS Security
+?
+Linux Servers
+?
+Weekly Backups
+?
+ModSecurity Manager
+Server Monitoring
+?
+24/7/365
+24/7/365
+24/7/365
+Power/Network/Hardware Redundancy
+Buy Now
+Buy Now
+Buy Now
+Support
+24/7 Human support
+Instant response over phone/chat
+?
+Ticketing Support
+OpenSource Application Support
+?
+Free Website Setup
+Free SSL Installation
+?
+Hacked Websites Recovery
+?
+Free Application and Plug-ins upgrade
+Buy Now
+Buy Now
+Buy Now
+cPanel Features
+Latest cPanel version
+Softaculous 1-Click Autoinstaller
+?
+400+ Free Applications
+Live Applications Demo
+Application Autoupdates
+?
+1-Click Restore Manager
+?
+FTP Accounts
+2
+5
+Unlimited
+FileManager
+Logs and Statistics
+?
+Resource Usage Monitoring
+Multiple PHP versions
+8.3, 8.2, 8.1, 8.0, 7.4, 7.3, 7.2, 7.1, 7.0
+8.3, 8.2, 8.1, 8.0, 7.4, 7.3, 7.2, 7.1, 7.0
+8.3, 8.2, 8.1, 8.0, 7.4, 7.3, 7.2, 7.1, 7.0
+PHP Version Switcher
+Mod_rewrite for SEO URLs
+?
+Password protected directories
+Cron Jobs
+Index Manager
+Custom php.ini Support
+SSL Features
+Cloudflare CDN Free SSL
+?
+Free Server Name Indicator (SNI)
+?
+Email Features
+Email Accounts
+5
+10
+25
+Email Forwarders
+Catch-all emails
+Webmail
+?
+IMAP/POP3
+Email Autoresponder
+Email Filters
+SPF and DKIM Support
+Virus Scanner
+?
+SpamAssassins
+Mobile compatibility
+?
+Email Calendar
+Mail Quotas
+Powerfull
+Powerfull
+Powerfull
+Database Features
+MySQL databases
+Unlimited
+Unlimited
+Unlimited
+phpMyAdmin
+Developer's Features
+Bash Support
+Perl Support
+Python Support
+MySQL 5.7
+Node.js Support
+Preinstalled GIT
+WP-CLI
+?
+SSH
+Laravel
+Genesis
+Phalcon
+Symfony
+Google Apps integration
+Pricing
+Regular Price
+$14.99/yearly
+$23.99/yearly
+$47.99/yearly
+Buy Now
+Buy Now
+Buy Now
+Reliable, Affordable & Flexible Web Hosting Services
+ZtHosting Provide the
+best web hosting in Pakistan
+for small business and corporate clients. Our shared web hosting service is blazing-fast and will never cause you loss of your valued traffic.
+One Click Installer
+Softaculous 1-Click Script Installer facilitates you with many of the best scripts in just one click.
+NVME SSD Storage
+We employ SSD-based servers to ensure extreme smoothness for websites with huge traffic.
+Weekly Backups
+To help you keep your website data safe, we make Weekly incremental backups on all servers.
+AntiSpam & AntiVirus
+THis Feature Allows you to receive and send spam-free Emails to your customers.
+CloudLinux & CageFs
+These Technologies provide a more secure and stable hosting environment for websites
+Cloud Based Servers
+With CloudServers we assure 100% uptime with Unlimited Bandwidth and Traffic.
+FAQS
+What Shared Hosting Really is?
+It is allocated space for a site with a virtualized set of resources, obtained from actual servers. In shared hosting, many websites are hosted on a single server.
+Because of sharing, the package is affordable for the majority of website owners, especially small business owners. In fact, it is the most popular option.
+What are the advantages of shared hosting?
+The very first advantage is its very low price, so the startups and small business may not need to overthink when they need web hosting.
+You can upgrade our package easily when your requirements increase.
+It has a built-in cPanel to manage your website without any hassle.
+You do not need to take measures for technical maintenance since it is included in the package.
+In short, it is well expandable, affordable, and easily manageable.
+What is the difference between shared hosting and WordPress Hosting?
+Shared hosting can be used for any content management system such as Joomla, Drupal, and the like including WordPress.
+WordPress hosting is exclusively customized and optimized to make WordPress work at optimum.
+What is the difference between shared hosting and VPS?
+Since shared hosting has many websites on the same server, you have to share the resources with others. In shared hosting:
+You get limited bandwidth.
+You can’t perform some administrative tasks independently.
+It is vulnerable to cyber-attacks.
+VPS hosting is more expensive than shared hosting, so it comes with noticeable differences and advantages. In VPS hosting:
+You can customize your options, as you have dedicated resources.
+Your web hosting performs better.
+You have a greater bandwidth allocation.
+It has a stronger security.
+How do I get started?
+Please, select a shared web hosting package, and click on the “Buy Now” button. You will be taken to the order from where you follow the instructions and make the payment to get your desired package.
+If you have any question or confusion, please call us at 03111045555 or send us an email at info@zthosting.com.
+Why Trust us?
+30 Day Money Back
+Guarantee
+99.99% Uptime
+Guarantee
+24/7 Support
+Guarantee
+Daily/Weekly Backup Guarantee
+Page Content
+Toggle
+Shared Hosting in Pakistan – Best Web Hosting
+cPanel Shared Starter
+cPanel Shared Pro
+cPanel Shared Max
+cPanel Shared Web Hosting in Pakistan – cPanel Best Web hosting
+Reliable, Affordable & Flexible Web Hosting Services
+One Click Installer
+NVME SSD Storage
+Weekly Backups
+AntiSpam & AntiVirus
+CloudLinux & CageFs
+Cloud Based Servers
+FAQS
+What Shared Hosting Really is?
+What are the advantages of shared hosting?
+What is the difference between shared hosting and WordPress Hosting?
+What is the difference between shared hosting and VPS?
+How do I get started?
+Why Trust us?
+30 Day Money Back 
+Guarantee
+99.99% Uptime 
+Guarantee
+24/7 Support 
+Guarantee
+Daily/Weekly Backup Guarantee

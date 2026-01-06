@@ -1,0 +1,294 @@
+# # # # # name: ZT Hosting Daily Content Sync
+
+# # # # # on:
+# # # # #   schedule:
+# # # # #     - cron: '0 0 * * *'  # Har raat 12:00 AM par chalega
+# # # # #   workflow_dispatch:      # Manual button bhi mil jayega GitHub par
+
+# # # # # jobs:
+# # # # #   auto-sync:
+# # # # #     runs-on: ubuntu-latest
+# # # # #     steps:
+# # # # #       - name: Repo Checkout
+# # # # #         uses: actions/checkout@v3
+
+# # # # #       - name: Setup Python
+# # # # #         uses: actions/setup-python@v4
+# # # # #         with:
+# # # # #           python-version: '3.9'
+
+# # # # #       - name: Dependencies Install
+# # # # #         run: pip install requests beautifulsoup4
+
+# # # # #       - name: Run Scraper
+# # # # #         run: python api/scraper.py
+
+# # # # #       - name: Push Updates
+# # # # #         run: |
+# # # # #           git config --global user.name 'ZT-Auto-Fetcher'
+# # # # #           git config --global user.email 'bot@zthosting.com'
+# # # # #           git add data/*.txt
+# # # # #           git commit -m "Auto-update: Website content refreshed" || exit 0
+# # # # #           git push
+
+
+
+# # # # # ChromaDB/LangChain ki dependencies install karni hongi.
+
+# # # # # ingest.py ko run karna hoga taake files ke saath saath bot ka "brain" (Vector Database) bhi update ho jaye.
+
+
+
+# # # # name: ZT Hosting Daily Content Sync
+
+# # # # on:
+# # # #   schedule:
+# # # #     - cron: '0 0 * * *'  # Har raat 12:00 AM (UTC) par chalega
+# # # #   workflow_dispatch:      # Manual trigger button
+
+# # # # jobs:
+# # # #   auto-sync:
+# # # #     runs-on: ubuntu-latest
+# # # #     steps:
+# # # #       - name: Repo Checkout
+# # # #         uses: actions/checkout@v3
+
+# # # #       - name: Setup Python
+# # # #         uses: actions/setup-python@v4
+# # # #         with:
+# # # #           python-version: '3.9'
+
+# # # #       - name: Dependencies Install
+# # # #         run: |
+# # # #           pip install requests beautifulsoup4 langchain langchain-chroma langchain-community sentence-transformers
+
+# # # #       - name: Run Scraper
+# # # #         run: python api/scraper.py
+
+# # # #       - name: Run Ingest (Sync Database)
+# # # #         run: python ingest.py  # Yeh sabse important step hai accuracy ke liye
+
+# # # #       - name: Push Updates
+# # # #         run: |
+# # # #           git config --global user.name 'ZT-Auto-Fetcher'
+# # # #           git config --global user.email 'bot@zthosting.com'
+# # # #           # Hum data files aur updated database dono push karenge
+# # # #           git add data/*.txt db/* git commit -m "Auto-update: Website content and Vector DB refreshed $(date)" || exit 0
+# # # #           git push
+
+
+# # # # Sir ki automation requirements ko pura karne ke liye, aapko apni GitHub Workflow file (.github/workflows/auto_sync.yml) ko mazeed robust banana hoga taake database aur data files sahi tarah sync hon.
+
+# # # # Niche aapki auto-sync file ka complete aur corrected code hai:
+
+
+# # # name: ZT Hosting Daily Content Sync
+
+# # # on:
+# # #   schedule:
+# # #     - cron: '0 0 * * *'  # Runs every night at 12:00 AM UTC
+# # #   workflow_dispatch:      # Manual trigger button for testing
+
+# # # permissions:
+# # #   contents: write         # Allows GitHub to push changes back to your repo
+
+# # # jobs:
+# # #   auto-sync:
+# # #     runs-on: ubuntu-latest
+# # #     steps:
+# # #       - name: Repo Checkout
+# # #         uses: actions/checkout@v3
+
+# # #       - name: Setup Python
+# # #         uses: actions/setup-python@v4
+# # #         with:
+# # #           python-version: '3.9'
+
+# # #       - name: Cache Dependencies
+# # #         uses: actions/cache@v3
+# # #         with:
+# # #           path: ~/.cache/pip
+# # #           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
+# # #       - name: Dependencies Install
+# # #         run: |
+# # #           pip install requests beautifulsoup4 langchain langchain-chroma langchain-community sentence-transformers
+
+# # #       - name: Run Scraper
+# # #         # Scraper fetches live data and checks for changes
+# # #         run: python api/scraper.py
+
+# # #       - name: Run Ingest (Sync Database)
+# # #         # Cleans data and updates Vector DB for 'disciplined' responses
+# # #         run: python ingest.py
+
+# # #       - name: Push Updates
+# # #         run: |
+# # #           git config --global user.name 'ZT-Auto-Fetcher'
+# # #           git config --global user.email 'bot@zthosting.com'
+          
+# # #           # Adding data and database files
+# # #           git add data/*.txt db/* 2>/dev/null || echo "No changes to add"
+          
+# # #           # Commit only if there are changes to avoid workflow failure
+# # #           git commit -m "Auto-update: Website content and Vector DB refreshed $(date)" || exit 0
+          
+# # #           # Push to the main branch
+# # #           git push origin main
+
+
+
+# # # update the code to scrapper ky error ko sovle krny ky lea 
+
+# # name: ZT Hosting Daily Content Sync
+
+# # on:
+# #   schedule:
+# #     - cron: '0 0 * * *'  # Runs every night at 12:00 AM UTC
+# #   workflow_dispatch:      # Manual trigger button for testing
+
+# # permissions:
+# #   contents: write         # Allows GitHub to push changes back to your repo
+
+# # jobs:
+# #   auto-sync:
+# #     runs-on: ubuntu-latest
+# #     steps:
+# #       - name: Repo Checkout
+# #         uses: actions/checkout@v3
+
+# #       - name: Setup Python
+# #         uses: actions/setup-python@v4
+# #         with:
+# #           python-version: '3.9'
+
+# #       - name: Dependencies Install
+# #         run: |
+# #           pip install requests beautifulsoup4 
+# #           pip install langchain langchain-chroma langchain-community 
+# #           pip install huggingface_hub  # OpenAI ki jagah ye install karein
+
+# #       - name: Run Scraper
+# #         # Scraper fetches live data
+# #         run: python api/scraper.py
+
+# #       - name: Run Ingest (Sync Database)
+# #         # This step now connects to your OpenAI Key in GitHub Secrets
+# #         env:
+# #           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+# #         run: python ingest.py
+
+# #       - name: Push Updates
+# #         run: |
+# #           git config --global user.name 'ZT-Auto-Fetcher'
+# #           git config --global user.email 'bot@zthosting.com'
+# #           git add data/*.txt db/* 2>/dev/null || echo "No changes to add"
+# #           git commit -m "Auto-update: Website content and Vector DB refreshed $(date)" || exit 0
+# #           git push origin main
+
+
+
+# # hugging face ki key to resolve the issuee of web scrapping error
+
+
+
+# name: ZT Hosting Daily Content Sync
+
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'  # Har raat 12 baje chale ga
+#   workflow_dispatch:      # Manual button testing ke liye
+
+# permissions:
+#   contents: write         # GitHub ko permission dena taake wo database save kar sake
+
+# jobs:
+#   auto-sync:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Repo Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Setup Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: '3.9'
+
+#       - name: Dependencies Install
+#         run: |
+#           pip install requests beautifulsoup4 
+#           pip install langchain langchain-chroma langchain-community 
+#           pip install huggingface_hub 
+
+#       - name: Run Scraper
+#         run: python api/scraper.py
+
+#       - name: Run Ingest (Sync Database)
+#         # Yahan humne OpenAI hata kar Hugging Face set kar diya hai
+#         env:
+#           HUGGINGFACE_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
+#         run: python ingest.py
+
+#       - name: Push Updates
+#         run: |
+#           git config --global user.name 'ZT-Auto-Fetcher'
+#           git config --global user.email 'bot@zthosting.com'
+#           git add data/*.txt db/* 2>/dev/null || echo "No changes to add"
+#           git commit -m "Auto-update: Website content and Vector DB refreshed $(date)" || exit 0
+#           git push origin main
+
+
+
+
+name: ZT Hosting Daily Content Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  auto-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # - name: Dependencies Install
+      #   run: |
+      #     pip install requests beautifulsoup4 
+      #     pip install langchain langchain-chroma langchain-community 
+      #     pip install huggingface_hub
+      #     pip install unstructured  # Files read karne ke liye zaroori hai
+
+
+      - name: Dependencies Install
+        run: |
+          pip install requests beautifulsoup4 
+          pip install langchain langchain-chroma langchain-community 
+          pip install langchain-huggingface sentence-transformers
+          pip install unstructured python-magic
+          
+      - name: Run Scraper
+        run: python api/scraper.py
+
+      - name: Run Ingest (Sync Database)
+        env:
+          HUGGINGFACE_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
+        run: python ingest.py
+
+      - name: Push Updates
+        run: |
+          git config --global user.name 'ZT-Auto-Fetcher'
+          git config --global user.email 'bot@zthosting.com'
+          git add data/*.txt db/* 2>/dev/null || echo "No changes to add"
+          git commit -m "Auto-update: Website content and Vector DB refreshed $(date)" || exit 0
+          git push origin main
