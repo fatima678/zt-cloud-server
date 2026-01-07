@@ -2777,6 +2777,17 @@ from supabase import create_client, Client
 
 from .response_formatter import ResponseFormatter
 from .output_parser import FormattedOutputParser
+from langchain.vectorstores import Chroma
+from langchain.embeddings.openai import OpenAIEmbeddings
+
+# Load embeddings ONCE
+embeddings = OpenAIEmbeddings()
+
+# Load vector DB ONCE
+vectorstore = Chroma(
+    persist_directory="db",
+    embedding_function=embeddings
+)
 
 app = FastAPI()
 
@@ -3083,14 +3094,14 @@ async def debug_paths():
 # update the code greeting ko sahi sy handle krny ky lea 
 
 
-DATA_DIR = BASE_DIR / "data"
+# DATA_DIR = BASE_DIR / "data"
 
-@app.post("/ask")
-async def ask_bot(request: Request):
-    try:
-        data = await request.json()
-        user_input = data.get("message", "").strip()
-        user_query_lower = user_input.lower()
+# @app.post("/ask")
+# async def ask_bot(request: Request):
+#     try:
+#         data = await request.json()
+#         user_input = data.get("message", "").strip()
+#         user_query_lower = user_input.lower()
 
         # --- GREETINGS REGEX (SAB SE UPAR) ---
      
@@ -3124,37 +3135,37 @@ async def ask_bot(request: Request):
 
 
         # --- STEP 1: SMART FRAGMENT SCANNER (Out of the box) ---
-        context_text = ""
-        user_words = [word for word in user_query_lower.split() if len(word) > 2]
+        # context_text = ""
+        # user_words = [word for word in user_query_lower.split() if len(word) > 2]
 
-        if DATA_DIR.exists():
-            all_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".txt")]
+        # if DATA_DIR.exists():
+        #     all_files = [f for f in os.listdir(DATA_DIR) if f.endswith(".txt")]
             
-            # 1. Filename matching (Priority)
-            matched_files = [f for f in all_files if any(w in f.lower() for w in user_words)]
+        #     # 1. Filename matching (Priority)
+        #     matched_files = [f for f in all_files if any(w in f.lower() for w in user_words)]
             
-            # 2. Deep Content Search (If answer is at the end of the file)
-            for f_name in matched_files[:5]:
-                f_path = DATA_DIR / f_name
-                full_content = f_path.read_text(encoding="utf-8")
+        #     # 2. Deep Content Search (If answer is at the end of the file)
+        #     for f_name in matched_files[:5]:
+        #         f_path = DATA_DIR / f_name
+        #         full_content = f_path.read_text(encoding="utf-8")
                 
-                # Agar file badi hai, toh keyword ke aas-paas ka text dhundo
-                if any(word in full_content.lower() for word in user_words):
-                    # Puri file ka wo hissa uthao jahan keyword hai (Start, Middle, or End)
-                    lines = full_content.splitlines()
-                    for i, line in enumerate(lines):
-                        if any(w in line.lower() for w in user_words):
-                            # Keyword wali line + uske upar niche ki 10 lines uthao
-                            start = max(0, i - 10)
-                            end = min(len(lines), i + 10)
-                            context_text += "\n".join(lines[start:end]) + "\n"
-                            break 
-                else:
-                    # Agar keyword nahi mila toh shuruat ka hi sahi
-                    context_text += full_content[:5000] + "\n"
+        #         # Agar file badi hai, toh keyword ke aas-paas ka text dhundo
+        #         if any(word in full_content.lower() for word in user_words):
+        #             # Puri file ka wo hissa uthao jahan keyword hai (Start, Middle, or End)
+        #             lines = full_content.splitlines()
+        #             for i, line in enumerate(lines):
+        #                 if any(w in line.lower() for w in user_words):
+        #                     # Keyword wali line + uske upar niche ki 10 lines uthao
+        #                     start = max(0, i - 10)
+        #                     end = min(len(lines), i + 10)
+        #                     context_text += "\n".join(lines[start:end]) + "\n"
+        #                     break 
+        #         else:
+        #             # Agar keyword nahi mila toh shuruat ka hi sahi
+        #             context_text += full_content[:5000] + "\n"
 
-        # --- STEP 2: AI PROCESSING (STRICT PROTOCOLS) ---
-        llm = get_llm()
+        # # --- STEP 2: AI PROCESSING (STRICT PROTOCOLS) ---
+        # llm = get_llm()
         # system_prompt = (
         #     "You are a Senior ZT Hosting Support Executive. "
         #     "STRICT PROTOCOLS: "
@@ -3204,27 +3215,83 @@ async def ask_bot(request: Request):
 #     "6. CLOSING: End every response with: 'Is there anything else I can assist you with regarding our hosting solutions?'"
 # )  
 
-        system_prompt = (
-    "You are the Senior Executive at ZT Hosting. Your signature style is 'Maximum Clarity, Minimum Words'.\n\n"
-    "RULES:\n"
-    "1. NO LONG PARAGRAPHS: Never write more than 2 sentences in a row.\n"
-    "2. MANDATORY TABLES: For any plans, pricing, or feature lists, use a Markdown Table. NO EXCEPTIONS.\n"
-    "3. PROFESSIONAL GREETING: If the user says Hi, respond with: 'Welcome to ZT Hosting Elite Support. How can I assist with your infrastructure today?'\n"
-    "4. BOLD KEYWORDS: Always **bold** prices and plan names."
-)
+#         system_prompt = (
+#     "You are the Senior Executive at ZT Hosting. Your signature style is 'Maximum Clarity, Minimum Words'.\n\n"
+#     "RULES:\n"
+#     "1. NO LONG PARAGRAPHS: Never write more than 2 sentences in a row.\n"
+#     "2. MANDATORY TABLES: For any plans, pricing, or feature lists, use a Markdown Table. NO EXCEPTIONS.\n"
+#     "3. PROFESSIONAL GREETING: If the user says Hi, respond with: 'Welcome to ZT Hosting Elite Support. How can I assist with your infrastructure today?'\n"
+#     "4. BOLD KEYWORDS: Always **bold** prices and plan names."
+# )
 
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", system_prompt),
-            ("user", f"Context: {context_text}\n\nQuestion: {user_input}")
-        ])
+#         prompt = ChatPromptTemplate.from_messages([
+#             ("system", system_prompt),
+#             ("user", f"Context: {context_text}\n\nQuestion: {user_input}")
+#         ])
 
-        chain = prompt | llm
-        response = chain.invoke({"input": user_input})
+#         chain = prompt | llm
+#         response = chain.invoke({"input": user_input})
         
-        return {"answer": response.content}
+#         return {"answer": response.content}
 
-    except Exception as e:
-        return {"answer": f"I'm sorry, I'm having trouble. (Error: {str(e)})"}
+#     except Exception as e:
+#         return {"answer": f"I'm sorry, I'm having trouble. (Error: {str(e)})"}
+
+
+
+# ---------------- CHATBOT MAIN ENDPOINT ------------------
+@app.post("/ask")
+async def ask(request: Request, user_input: str = Form(...)):
+    """Main chatbot endpoint"""
+
+    # 1) Load admin style from DB (short / conversational)
+    try:
+        style_row = supabase.table("settings").select("response_style").limit(1).execute()
+        style = style_row.data[0]["response_style"] if style_row.data else "short"
+    except Exception:
+        style = "short"
+
+    formatter = ResponseFormatter(style=style)
+
+    # 2) Vector Search top 3 chunks
+    try:
+        docs = vectorstore.similarity_search(user_input, k=3)
+        context = "\n\n".join([d.page_content for d in docs]) if docs else ""
+    except Exception:
+        context = ""
+
+    # 3) Build final prompt
+    prompt = ChatPromptTemplate.from_template("""
+You are a helpful support agent for a Pakistani hosting company.
+Only use the information from CONTEXT.
+If answer not found, reply honestly: "Sorry, I don't have that info."
+
+USER QUESTION:
+{question}
+
+CONTEXT:
+{context}
+
+REPLY:
+""")
+
+    llm = get_llm()
+    chain = prompt | llm
+
+    # 4) Query LLM
+    raw_output = await chain.ainvoke({
+        "question": user_input,
+        "context": context
+    })
+
+    # 5) Clean + format response
+    formatted = formatter.format(
+        raw_output.content if hasattr(raw_output, "content") else raw_output,
+        user_input=user_input
+    )
+
+    return {"answer": formatted}
+
 
 # --- Routes for UI (Baqi routes same rahenge) ---
 @app.get("/", response_class=HTMLResponse)
